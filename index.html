@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Главная</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav class="main-nav container">
         <a href="./index.html" class="logo"
           >Web<span class="studio-header">Studio</span></a
@@ -61,95 +62,100 @@
             Заказать услугу
           </button>
         </div>
-      </section>
-      <!--Особенности-->
-      <section class="section">
+      </section> -->
+    <!--Особенности-->
+    <section class="section">
+      <div class="container">
         <h2 class="section__title section__title--hidden">Особенности</h2>
-        <ul class="list container">
-          <li class="container__item">
-            <div class="container__content">
-              <svg class="container__pic" width="70" height="70">
+        <ul class="list features">
+          <li class="features__item">
+            <div class="features__content">
+              <svg class="features__pic" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-            <h3 class="container__title">Внимание к деталям</h3>
-            <p class="container__text">
+            <h3 class="features__title">Внимание к деталям</h3>
+            <p class="features__text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li class="container__item">
-            <div class="container__content">
-              <svg class="container__pic" width="70" height="70">
+          <li class="features__item">
+            <div class="features__content">
+              <svg class="features__pic" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-vector-clock"></use>
               </svg>
             </div>
-            <h3 class="container__title">Пунктуальность</h3>
-            <p class="container__text">
+            <h3 class="features__title">Пунктуальность</h3>
+            <p class="features__text">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li class="container__item">
-            <div class="container__content">
-              <svg class="container__pic" width="70" height="70">
+          <li class="features__item">
+            <div class="features__content">
+              <svg class="features__pic" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-vector"></use>
               </svg>
             </div>
-            <h3 class="container__title">Планирование</h3>
-            <p class="container__text">
+            <h3 class="features__title">Планирование</h3>
+            <p class="features__text">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li class="container__item">
-            <div class="container__content">
-              <svg class="container__pic" width="70" height="70">
+          <li class="features__item">
+            <div class="features__content">
+              <svg class="features__pic" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <h3 class="container__title">Современные технологии</h3>
-            <p class="container__text">
+            <h3 class="features__title">Современные технологии</h3>
+            <p class="features__text">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
           </li>
         </ul>
-      </section>
-      <!--Чем мы занимаемся-->
-      <section class="section section--shift">
+      </div>
+    </section>
+    <!-- Чем мы занимаемся -->
+    <section class="section section--shift">
+      <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
-        <ul class="list container">
-          <li class="list-item">
+        <ul class="list about">
+          <li class="about-item">
             <img
               src="./images/comp.jpg"
               alt="Разработка для компьютера"
               width="370"
             />
-            <div class="list-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
+            <div class="about-text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</div>
           </li>
-          <li class="list-item">
+          <li class="about-item">
             <img
               src="./images/smart.jpg"
               alt="Разработка для смартфона"
               width="370"
             />
-            <div class="list-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
+            <div class="about-text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</div>
           </li>
-          <li class="list-item">
+          <li class="about-item">
             <img
               src="./images/pad.jpg"
               alt="Разработка для планшета"
               width="370"
             />
-            <div class="list-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
+            <div class="about-text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</div>
           </li>
         </ul>
-      </section>
-      <!--Наша команда-->
-      <section class="section peoples">
+      </div>
+    </section>
+    <!--Наша команда-->
+    <!-- <section class="section peoples">
+            <div class="container">
         <h2 class="section__title">Наша команда</h2>
-        <ul class="list container">
+        <ul class="list">
           <li class="item-userpic">
             <img
               class="avatar"
@@ -319,11 +325,13 @@
             </div>
           </li>
         </ul>
-      </section>
-      <!--Постоянные клиенты-->
-      <section class="section">
+      </div>
+      </section> -->
+    <!--Постоянные клиенты-->
+    <!-- <section class="section">
+            <div class="container">
         <h2 class="section__title">Постоянные клиенты</h2>
-        <ul class="list container">
+        <ul class="list">
           <li class="list__pic">
             <a class="list__link" href="">
               <svg class="icon-clients" width="106" height="60">
@@ -367,6 +375,7 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">
@@ -520,7 +529,7 @@
           <button class="submit" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
   </body>

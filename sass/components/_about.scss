@@ -1,10 +1,27 @@
 //Чем мы занимаемся
+.section--shift {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
-.list-item {
+.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-item {
   position: relative;
 }
 
-.list-text {
+.about-text {
   position: absolute;
   display: flex;
   width: 100%;
