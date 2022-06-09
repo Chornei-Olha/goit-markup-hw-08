@@ -1,0 +1,117 @@
+.header {
+  outline: 1px solid $header-line-color;
+}
+
+//Main-nav
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+// Site-nav
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-text-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover,
+  &:focus {
+    color: $text-decoration-color;
+  }
+}
+
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+
+// Auth-nav
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $primary-text-color;
+  text-decoration: none;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover,
+  &:focus {
+    color: $text-decoration-color;
+  }
+}
+
+.mail-icon {
+  margin-right: 10px;
+  fill: currentColor;
+  align-items: center;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover,
+  &:focus {
+    fill: $text-decoration-color;
+  }
+}
+
+.auth-nav li + li {
+  margin-left: 50px;
+}
+
+.link-studio,
+.link-foto {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $text-decoration-color;
+  text-decoration: none;
+}
+
+.link-studio::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 28px;
+  background-color: $text-decoration-color;
+  opacity: 1;
+}
+
+.link-foto::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 28px;
+  background-color: $text-decoration-color;
+  opacity: 1;
+}

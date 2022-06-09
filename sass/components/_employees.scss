@@ -1,0 +1,77 @@
+//Наша команда
+
+.peoples {
+  background-color: #f5f4fa;
+}
+
+.item-userpic {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  display: block;
+  max-width: 100%;
+}
+
+.name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $white-color;
+}
+
+.name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $title-text-color;
+}
+
+.position {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $primary-text-color;
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 32px;
+  padding-left: 32px;
+  list-style-type: none;
+}
+
+.social-network > .social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: $white-color;
+  fill: $icon-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover,
+  &:focus {
+    background-color: $text-decoration-color;
+    fill: $white-color;
+  }
+}

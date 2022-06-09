@@ -1,0 +1,30 @@
+//лого
+
+.studio-header {
+  color: #000;
+  font-family: "Raleway";
+}
+
+.studio-footer {
+  display: inline-block;
+  color: $white-color;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 20;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $text-decoration-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover {
+    color: $text-decoration-color;
+  }
+}

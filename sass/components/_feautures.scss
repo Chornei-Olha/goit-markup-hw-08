@@ -1,0 +1,36 @@
+//Особенности
+
+.container__item {
+  width: 270px;
+}
+
+.container__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $title-text-color;
+  text-transform: uppercase;
+}
+
+.container__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $primary-text-color;
+}
+
+.container__content {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: $btn-bg-color;
+}

@@ -1,0 +1,24 @@
+//заголовки h1
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    text-align: center;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    color: $title-text-color;
+  }
+
+  &--shift {
+    padding-top: 0;
+  }
+}
+//скрытый заголовок
+
+.section__title--hidden {
+  display: none;
+}

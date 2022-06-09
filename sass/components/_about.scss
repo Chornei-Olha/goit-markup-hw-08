@@ -1,0 +1,21 @@
+//Чем мы занимаемся
+
+.list-item {
+  position: relative;
+}
+
+.list-text {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  justify-content: center;
+  align-items: center;
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  transform: translate(0px, -100%);
+}
