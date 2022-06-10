@@ -14,6 +14,7 @@
 .features__item {
   @media screen and (min-width: 480px) {
     width: 100%;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     margin: 15px;
@@ -21,6 +22,7 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 
@@ -41,16 +43,6 @@
   line-height: 1.71;
   color: $primary-text-color;
   text-align: left;
-
-  @media screen and (min-width: 480px) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-  }
 }
 
 .features__content {

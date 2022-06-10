@@ -1,9 +1,5 @@
 //галерея Портфолио
 
-.portfolio {
-  padding: 94px 0;
-}
-
 .list-button {
   display: flex;
   margin: 0 0 34px;
@@ -13,13 +9,20 @@
 }
 
 .foto {
-  margin: 0 0 -30px -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  // margin: 0 0 -30px -30px;
 }
 
-.items {
+.foto__items {
   box-sizing: border-box;
-  width: calc(100% / 3 - 30px);
-  margin: 0 0 30px 30px;
+  // margin: 0 0 30px 30px;
   transition-duration: $transition-duration;
   transition-timing-function: $option;
 
@@ -27,11 +30,49 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
       0px 1px 1px rgba(0, 0, 0, 0.12);
   }
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    width: 100%;
+    &:nth-last-child(-n + 1) {
+      margin-bottom: -30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: -30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: -30px;
+    }
+  }
 }
 
 .project-overlay {
   position: relative;
   overflow: hidden;
+}
+
+.list-link {
+  transition-duration: 250ms;
+  transition-timing-function: $option;
+
+  &:hover {
+    background-color: $text-decoration-color;
+  }
+}
+
+.thumb {
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
 }
 
 .text-portfolio {
@@ -50,6 +91,20 @@
   transform: translateY(100%);
   transition-duration: $transition-duration;
   transition-timing-function: $option;
+
+  @media screen and (min-width: 480px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    // margin-right: 30px;
+    // margin-bottom: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .items:hover .text-portfolio {
@@ -59,35 +114,26 @@
 }
 
 .project {
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px 24px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.project-name {
+.project__name {
   margin: 0 0 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  text-align: left;
   color: $title-text-color;
 }
 
-.project-type {
+.project__type {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
+  text-align: left;
   color: $primary-text-color;
-}
-
-.list-link {
-  transition-duration: 250ms;
-  transition-timing-function: $option;
-
-  &:hover {
-    background-color: $text-decoration-color;
-  }
 }
