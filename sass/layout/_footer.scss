@@ -10,8 +10,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -80,6 +78,7 @@
 .tel {
   display: inline-block;
   margin-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
@@ -147,6 +146,7 @@
 .footer-box {
   align-items: center;
   justify-content: center;
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }

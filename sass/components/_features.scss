@@ -6,7 +6,6 @@
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
     flex-wrap: nowrap;
   }
 }
@@ -17,8 +16,8 @@
     margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
-    margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -41,9 +40,6 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
-  @media screen and (min-width: 1200px) {
-    text-align: left;
-  }
 }
 
 .features__text {
@@ -57,7 +53,6 @@
 
 .features__content {
   display: flex;
-  // width: 450px;
   height: 120px;
   justify-content: center;
   align-items: center;

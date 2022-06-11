@@ -7,16 +7,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
-  }
+  margin-bottom: 0;
 }
 
 // Site-nav
@@ -25,15 +16,11 @@
   @media screen and (min-width: 480px) {
     display: none;
   }
-
   @media screen and (min-width: 768px) {
     display: flex;
     margin-right: 84px;
   }
-
   @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-bottom: 0;
     margin-left: 93px;
   }
 }
@@ -54,12 +41,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.17;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
     line-height: 1.17;
   }
 }
@@ -72,6 +53,7 @@
 
 .auth-nav {
   margin-left: auto;
+
   @media screen and (min-width: 480px) {
     display: none;
   }
@@ -103,6 +85,7 @@
   &:focus {
     color: $text-decoration-color;
   }
+
   @media screen and (min-width: 768px) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -113,7 +96,6 @@
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
     font-size: 14px;
-    line-height: 1.17;
   }
 }
 
@@ -134,7 +116,9 @@
 }
 
 .auth-nav li + li {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .link-studio,
@@ -147,11 +131,6 @@
   text-decoration: none;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.17;
-  }
-
-  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.17;
   }

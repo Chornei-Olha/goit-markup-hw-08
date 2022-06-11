@@ -1,13 +1,9 @@
 //Постоянные клиенты
+
 .clients {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
+
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
@@ -16,10 +12,10 @@
 
 .clients__pic {
   margin-right: 0;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    margin-bottom: 30px;
     &:nth-last-child(-n + 2) {
       margin-bottom: -30px;
     }
@@ -27,7 +23,6 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-bottom: 30px;
     &:nth-last-child(-n + 3) {
       margin-bottom: -30px;
     }
@@ -59,16 +54,15 @@
 }
 
 .clients__link {
+  height: 92px;
+
   @media screen and (min-width: 480px) {
     width: 210px;
-    height: 92px;
   }
   @media screen and (min-width: 768px) {
     width: 226px;
-    height: 92px;
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
-    height: 92px;
   }
 }

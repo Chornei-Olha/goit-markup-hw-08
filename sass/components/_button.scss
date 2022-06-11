@@ -21,7 +21,7 @@
   }
 }
 
-//кнопка модального окна
+//кнопка Модального окна
 
 .close-button {
   width: 30px;
@@ -49,6 +49,7 @@
 
 .submit {
   padding: 10px 55px;
+  margin: 31px 125px 40px 125px;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -67,18 +68,12 @@
     background-color: #188ce8;
   }
 
-  @media screen and (min-width: 480px) {
-    margin: 31px 125px 40px 125px;
-  }
-  @media screen and (min-width: 768px) {
-    margin: 31px 125px 40px 125px;
-  }
   @media screen and (min-width: 1200px) {
     margin: 30px 164px 40px 164px;
   }
 }
 
-//кнопка в footer
+//кнопка в Footer
 
 .btn {
   position: relative;
@@ -127,7 +122,7 @@
   right: 28px;
 }
 
-//Кнопки портфолио
+//кнопки Портфолио
 
 .list-button {
   list-style: none;
@@ -137,22 +132,18 @@
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 0 40px 0;
+    margin: 0 0 25px 0;
     justify-content: left;
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: nowrap;
     margin: 0 0 30px 0;
     justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: nowrap;
     margin: 0 0 50px 0;
-    justify-content: center;
   }
 }
 
@@ -160,6 +151,7 @@
   display: block;
   padding: 6px 22px;
   margin-right: 8px;
+  margin-bottom: 15px;
   border: none;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -170,15 +162,7 @@
   color: $white-color;
   background-color: $text-decoration-color;
 
-  @media screen and (min-width: 480px) {
-    margin-bottom: 15px;
-  }
-
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
     margin-bottom: 0;
   }
 }
@@ -187,6 +171,7 @@
   display: block;
   padding: 6px 22px;
   margin-right: 8px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   font-weight: 500;
@@ -207,5 +192,9 @@
     background-color: $text-decoration-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }

@@ -1,14 +1,9 @@
 //заголовки h1
 
 .section {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -17,24 +12,15 @@
   &__title {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
     font-weight: 700;
     color: $title-text-color;
 
-    @media screen and (min-width: 480px) {
-      margin-bottom: 30px;
-      font-size: 28px;
-      line-height: 1.17;
-    }
-    @media screen and (min-width: 768px) {
-      margin-bottom: 30px;
-      font-size: 28px;
-      line-height: 1.17;
-    }
     @media screen and (min-width: 1200px) {
       margin-bottom: 50px;
       font-size: 36px;
-      line-height: 1.17;
     }
   }
 

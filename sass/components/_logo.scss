@@ -1,4 +1,4 @@
-//лого
+//Лого
 
 .studio-header {
   color: #000;
@@ -8,14 +8,15 @@
 .studio-footer {
   display: inline-block;
   color: $white-color;
-  margin-bottom: 20px;
 }
 
-.logo {
+.logo-header {
   display: inline-block;
   margin-bottom: 20;
   font-family: "Raleway";
   font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   color: $text-decoration-color;
   text-decoration: none;
   transition-property: color;
@@ -28,20 +29,36 @@
   @media screen and (min-width: 480px) {
     padding-top: 16px;
     padding-bottom: 16px;
-    font-size: 24px;
-    line-height: 1.17;
   }
-
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 88px;
-    font-size: 24px;
-    line-height: 1.17;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+
+.logo-footer {
+  display: inline-block;
+  padding-bottom: 20px;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $text-decoration-color;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $option;
+
+  &:hover {
+    color: $text-decoration-color;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 26px;
-    line-height: 1.17;
   }
 }
