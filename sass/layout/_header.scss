@@ -7,13 +7,35 @@
 .main-nav {
   display: flex;
   align-items: center;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 // Site-nav
 
 .site-nav {
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 93px;
+  }
 }
 
 .site-nav .link {
@@ -30,6 +52,16 @@
   &:focus {
     color: $text-decoration-color;
   }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .site-nav li:not(:last-child) {
@@ -39,8 +71,19 @@
 // Auth-nav
 
 .auth-nav {
-  display: flex;
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .auth-nav .link {
@@ -50,8 +93,7 @@
   padding-bottom: 32px;
   border: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+
   color: $primary-text-color;
   text-decoration: none;
   transition-duration: $transition-duration;
@@ -61,10 +103,21 @@
   &:focus {
     color: $text-decoration-color;
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .mail-icon {
-  margin-right: 10px;
   fill: currentColor;
   align-items: center;
   transition-duration: $transition-duration;
@@ -74,10 +127,14 @@
   &:focus {
     fill: $text-decoration-color;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
 }
 
 .auth-nav li + li {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .link-studio,
@@ -86,10 +143,18 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   color: $text-decoration-color;
   text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .link-studio::after {
