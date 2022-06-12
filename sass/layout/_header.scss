@@ -13,9 +13,8 @@
 // Site-nav
 
 .site-nav {
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     margin-right: 84px;
@@ -53,16 +52,12 @@
 
 .auth-nav {
   margin-left: auto;
-
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -92,7 +87,6 @@
     font-size: 12px;
     line-height: 1.17;
   }
-
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
     font-size: 14px;
