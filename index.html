@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="main-nav container">
+        <nav class="main-nav">
           <a href="./index.html" class="logo-header"
             >Web<span class="studio-header">Studio</span></a
           >
@@ -56,7 +56,10 @@
             <div class="contacts">
               <ul class="auth-nav list">
                 <li class="nav-item">
-                  <a class="link" href="mailto:info@devstudio.com">
+                  <a
+                    class="nav-item__link email"
+                    href="mailto:info@devstudio.com"
+                  >
                     <svg class="mail-icon" width="16" height="12">
                       <use href="./images/symbol-defs.svg#icon-mail"></use>
                     </svg>
@@ -64,7 +67,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="link" href="tel:+380961111111">
+                  <a class="nav-item__link telephone" href="tel:+380961111111">
                     <svg class="mail-icon" width="10" height="16">
                       <use
                         href="./images/symbol-defs.svg#icon-smartphone"
@@ -72,6 +75,20 @@
                     </svg>
                     +38 096 111 111 1
                   </a>
+                </li>
+              </ul>
+              <ul class="menu-social">
+                <li class="menu-social__link">
+                  <a class="menu-social__item" href="">Instagram </a>
+                </li>
+                <li class="menu-social__link">
+                  <a class="menu-social__item" href="">Twitter </a>
+                </li>
+                <li class="menu-social__link">
+                  <a class="menu-social__item" href="">Facebook </a>
+                </li>
+                <li class="menu-social__link">
+                  <a class="menu-social__item" href="">LinkedIn </a>
                 </li>
               </ul>
             </div>
@@ -158,7 +175,11 @@
           <ul class="list about">
             <li class="about-item">
               <img
-                src="./images/comp.jpg"
+                srcset="
+                  ./images/main/mobile@1x.jpg,
+                  ./images/main/mobile@2x.jpg
+                "
+                src="./images/main/mobile@1x.jpg"
                 alt="Разработка для компьютера"
                 width="370"
               />
@@ -166,7 +187,11 @@
             </li>
             <li class="about-item">
               <img
-                src="./images/smart.jpg"
+                srcset="
+                  ./images/main/tablet@1x.jpg,
+                  ./images/main/tablet@2x.jpg
+                "
+                src="./images/main/tablet@1x.jpg"
                 alt="Разработка для смартфона"
                 width="370"
               />
@@ -174,7 +199,11 @@
             </li>
             <li class="about-item">
               <img
-                src="./images/pad.jpg"
+                srcset="
+                  ./images/main/desktop@1x.jpg,
+                  ./images/main/desktop@2x.jpg
+                "
+                src="./images/main/desktop@1x.jpg"
                 alt="Разработка для планшета"
                 width="370"
               />
@@ -191,7 +220,11 @@
             <li class="item-userpic">
               <img
                 class="avatar"
-                src="./images/demyanenko.jpg"
+                srcset="
+                  ./images/main/demyanenko@1x.jpg,
+                  ./images/main/demyanenko@2x.jpg
+                "
+                src="./images/main/demyanenko@1x.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
@@ -239,7 +272,11 @@
             <li class="item-userpic">
               <img
                 class="avatar"
-                src="./images/repina.jpg"
+                srcset="
+                  ./images/main/repina@1x.jpg,
+                  ./images/main/repina@2x.jpg
+                "
+                src="./images/main/repina@1x.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
@@ -287,7 +324,11 @@
             <li class="item-userpic">
               <img
                 class="avatar"
-                src="./images/tarasov.jpg"
+                srcset="
+                  ./images/main/tarasov@1x.jpg,
+                  ./images/main/tarasov@2x.jpg
+                "
+                src="./images/main/tarasov@1x.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
@@ -335,7 +376,11 @@
             <li class="item-userpic">
               <img
                 class="avatar"
-                src="./images/ermakov.jpg"
+                srcset="
+                  ./images/main/ermakov@1x.jpg,
+                  ./images/main/ermakov@2x.jpg
+                "
+                src="./images/main/ermakov@1x.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
