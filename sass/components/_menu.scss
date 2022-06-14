@@ -45,14 +45,18 @@
     height: 100vh;
     z-index: 4;
     overflow-y: scroll;
-    // transform: translateX(100%);
 
     &.is-open {
       display: block;
-      // transform: translateX(0);
     }
   }
+
+  @media screen and (max-width: 767px) {
+    position: absolute;
+  }
+
   @media screen and (min-width: 768px) {
+    position: static;
     display: flex;
   }
 }
@@ -62,6 +66,13 @@
   padding: 0;
   width: 100vw;
   height: 100vh;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-left: 84px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   margin-left: 305px;
+  // }
 }
 
 .menu-toggle {

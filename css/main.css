@@ -147,6 +147,7 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .logo-header {
     font-size: 26px;
+    margin-right: 93px;
   }
 }
 
@@ -239,8 +240,15 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: absolute;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-container {
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1223,6 +1231,10 @@ body.modal-open {
   text-align: center;
 }
 
+.portfolio {
+  border-top: 1px solid #ececec;
+}
+
 @media screen and (min-width: 768px) {
   .foto {
     display: -webkit-box;
@@ -1397,10 +1409,6 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1408,13 +1416,6 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 84px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    margin-left: 93px;
   }
 }
 
@@ -1422,7 +1423,6 @@ body.modal-open {
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 0;
-  padding-left: 40px;
   color: #212121;
   text-decoration: none;
   -webkit-transition-property: color;
@@ -1439,7 +1439,7 @@ body.modal-open {
 
 @media screen and (max-width: 767px) {
   .site-nav .link {
-    font-weight: 500;
+    padding-left: 40px;
     font-size: 40px;
     line-height: 1.17;
   }
@@ -1461,16 +1461,32 @@ body.modal-open {
 
 .auth-nav {
   margin-left: auto;
-  margin-top: 302px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 302px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .auth-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: 84px;
   }
 }
 
@@ -1479,43 +1495,10 @@ body.modal-open {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 305px;
   }
-}
-
-.auth-nav .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  font-weight: 500;
-  color: #757575;
-  text-decoration: none;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.auth-nav .link:hover, .auth-nav .link:focus {
-  color: #2196f3;
-}
-
-@media screen and (min-width: 1200px) {
-  .auth-nav .link {
-    margin-right: 10px;
-    font-size: 14px;
-  }
-}
-
-.nav-item {
-  padding-left: 40px;
-}
-
-.nav-item:last-child {
-  color: #757575;
 }
 
 .nav-item__link {
@@ -1539,51 +1522,113 @@ body.modal-open {
   color: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .nav-item__link {
-    font-size: 34px;
-    line-height: 1.18;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item {
+    padding-top: 32px;
+    padding-left: 40px;
+  }
+  .nav-item:last-child {
+    color: #757575;
+    padding-top: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav-item__link {
-    padding-bottom: 0;
-    font-size: 12px;
-    line-height: 1.17;
+  .nav-item {
+    padding-top: 0;
+    padding-left: 0;
   }
 }
 
 .telephone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-weight: 500;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   color: #2196f3;
 }
 
+.telephone:hover, .telephone:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .telephone {
+    padding-bottom: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    color: #757575;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .telephone {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
+
 .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-weight: 500;
+  color: #757575;
+  text-decoration: none;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   color: #757575;
 }
 
-.mail-icon {
-  fill: currentColor;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.email:hover, .email:focus {
+  color: #2196f3;
 }
 
-.mail-icon:hover, .mail-icon:focus {
-  fill: #2196f3;
+@media screen and (min-width: 768px) {
+  .email {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .email {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .mail-icon {
     display: none;
   }
@@ -1591,7 +1636,21 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .mail-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-right: 8px;
+    fill: currentColor;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mail-icon:hover, .mail-icon:focus {
+    fill: #2196f3;
   }
 }
 
@@ -1604,8 +1663,6 @@ body.modal-open {
 .link-studio,
 .link-foto {
   display: block;
-  padding-top: 48px;
-  padding-left: 40px;
   font-weight: 500;
   color: #2196f3;
   text-decoration: none;
@@ -1614,9 +1671,10 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .link-studio,
   .link-foto {
-    font-weight: 500;
+    padding-top: 48px;
+    padding-left: 40px;
     font-size: 40px;
-    line-height: 1.17;
+    line-height: 1.14;
     text-align: left;
   }
 }
@@ -1644,16 +1702,18 @@ body.modal-open {
   }
 }
 
-.link-foto::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 78px;
-  height: 4px;
-  border-radius: 2px;
-  margin-top: 28px;
-  background-color: #2196f3;
-  opacity: 1;
+@media screen and (min-width: 768px) {
+  .link-foto::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 28px;
+    background-color: #2196f3;
+    opacity: 1;
+  }
 }
 
 .menu-social {
@@ -1661,9 +1721,15 @@ body.modal-open {
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
-  margin-bottom: 0px;
+  margin-top: 64px;
   margin-bottom: 48px;
   padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-social {
+    display: none;
+  }
 }
 
 .menu-social__link {
